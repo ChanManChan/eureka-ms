@@ -1,4 +1,4 @@
-package com.u4.chan.photoapp.api.ApiGateway;
+package com.u4.chan.photoapp.api.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.u4.chan.photoapp.api.ApiGateway;
+package com.u4.chan.photoapp.api.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

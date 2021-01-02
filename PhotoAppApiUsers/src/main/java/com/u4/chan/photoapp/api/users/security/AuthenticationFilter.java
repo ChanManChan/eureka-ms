@@ -57,6 +57,8 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
         UserDto userDetails = usersService.getUserDetailsByEmail(userName);
 
+        System.out.println(environment.getProperty("nandu.testing"));
+
         String token = Jwts.builder()
                 .setSubject(userDetails.getUserId())
                 .setExpiration(new Date(System.currentTimeMillis() + Long.parseLong(environment.getProperty("token.expiration_time"))))
