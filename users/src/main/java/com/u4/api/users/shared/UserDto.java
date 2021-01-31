@@ -1,6 +1,9 @@
 package com.u4.api.users.shared;
 
+import com.u4.api.users.ui.model.AlbumResponseModel;
+
 import java.io.Serializable;
+import java.util.List;
 
 public class UserDto implements Serializable {
     private static final long serialVersionUID = -1081229576138956196L;
@@ -10,6 +13,15 @@ public class UserDto implements Serializable {
     private String password;
     private String userId;
     private String encryptedPassword;
+    private List<AlbumResponseModel> albums;
+
+    public List<AlbumResponseModel> getAlbums() {
+        return albums;
+    }
+
+    public void setAlbums(List<AlbumResponseModel> albums) {
+        this.albums = albums;
+    }
 
     public String getFirstName() {
         return firstName;
